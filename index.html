@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mit Kumar Patel | AI & NLP Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
+    body { font-family:'Roboto', sans-serif; line-height:1.6; background:#f5f5f5; color:#333; transition: background 0.3s, color 0.3s; }
+    a { text-decoration:none; }
+    
+    /* Dark mode */
+    body.dark { background:#1a1a1a; color:#f5f5f5; }
+    body.dark header, body.dark nav { background:#111; }
+    body.dark footer { background:#111; color:#aaa; }
+    body.dark .skills span { background:#f0a500; color:#111; }
+
+    /* Header */
+    header { background:#1a1a1a; color:#fff; padding:60px 20px; text-align:center; position:relative; }
+    header h1 { font-size:3em; margin-bottom:10px; transition:0.3s; }
+    header p { font-size:1.2em; transition:0.3s; }
+
+    /* Dark/light toggle */
+    .toggle-btn { position:absolute; top:20px; right:20px; background:#f0a500; color:#111; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; font-weight:700; }
+    .toggle-btn:hover { opacity:0.8; }
+
+    /* Navigation */
+    nav { display:flex; justify-content:center; background:#111; padding:12px 0; position:sticky; top:0; z-index:100; }
+    nav a { color:#fff; margin:0 20px; font-weight:700; transition:0.3s; }
+    nav a:hover { color:#f0a500; }
+
+    /* Sections */
+    section { max-width:1000px; margin:60px auto; padding:0 20px; }
+    h2 { font-size:2em; border-bottom:3px solid #f0a500; display:inline-block; margin-bottom:25px; }
+    h3 { margin:15px 0 10px; color:#222; }
+    ul { margin-left:20px; margin-bottom:20px; }
+
+    /* Skills */
+    .skills { display:flex; flex-wrap:wrap; margin-top:10px; }
+    .skills span { display:inline-block; background:#f0a500; color:#fff; padding:6px 14px; margin:5px; border-radius:20px; font-size:0.9em; transition:0.3s; }
+    .skills span:hover { transform:scale(1.1); }
+
+    /* Contact */
+    .contact a { color:#f0a500; font-weight:700; transition:0.3s; }
+    .contact a:hover { text-decoration:underline; }
+
+    /* Footer */
+    footer { text-align:center; padding:25px; background:#111; color:#777; margin-top:60px; }
+
+    /* Responsive */
+    @media(max-width:600px){header h1{font-size:2em}}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mit Kumar Patel</h1>
+  <p>Lead AI / NLP Engineer | St. John’s, NL</p>
+  <p>Email: <a class="contact" href="mailto:mitbpatel0128@gmail.com">mitbpatel0128@gmail.com</a></p>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark/Light</button>
+</header>
+
+<nav>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <h3>SiftMed – St. John’s, NL</h3>
+  <p><strong>Lead AI Developer | NLP & LLM Expert</strong> (Jul 2025 – Present)</p>
+  <ul>
+    <li>Boosted page segmentation accuracy from 50% → 90% using foundational models (Mistral, Sonnet, Haiku) via AWS Bedrock & SageMaker.</li>
+    <li>Managed RAG pipelines; integrated embeddings (Cohere Embed-4, Strand-Agent).</li>
+    <li>Mentored engineers on prompt engineering and safe LLM deployment.</li>
+    <li>Automated prod-to-test data pipelines and implemented LLM risk guardrails.</li>
+  </ul>
+
+  <p><strong>Senior Machine Learning Engineer | NLP & LLM Specialist</strong> (Oct 2022 – May 2025)</p>
+  <ul>
+    <li>Fine-tuned BERT, DiT, ViT, GLiNER, LLaVA1.6 for multimodal NLP tasks.</li>
+    <li>Optimized PySpark/Pandas pipelines, achieving 70% faster processing.</li>
+    <li>Automated SageMaker deployments, Bedrock-based validation, and CI/CD pipelines.</li>
+  </ul>
+
+  <h3>RBC – Toronto, ON</h3>
+  <p><strong>Lead Data Engineer</strong> (May 2025 – Jul 2025)</p>
+  <ul>
+    <li>Developed OCR APIs using **PaddleOCR** for document ingestion and processing.</li>
+    <li>Deployed Neo4j knowledge graphs and built secure ETL pipelines from NAS → Neo4j.</li>
+    <li>Automated GitHub-to-VM deployments using Ansible and added data validation layers.</li>
+    <li>Supported teams with Neo4j setup, API integration, and in-house SageMaker provisioning.</li>
+  </ul>
+
+  <h3>Nova Scotia Community College – Halifax, NS</h3>
+  <p><strong>Research Associate</strong> (Sep 2023 – Feb 2024)</p>
+  <ul>
+    <li>Delivered RAG-based AI system with 83% hit rate; fine-tuned 7B LLMs.</li>
+    <li>Built vector retrieval pipelines using LangChain, LLMSherpa, Pinecone.</li>
+    <li>Implemented generative pipelines for contextual document Q&A.</li>
+  </ul>
+
+  <h3>CGI – Halifax, NS</h3>
+  <p><strong>Data Engineer – Internal Audit</strong> (Feb 2022 – Oct 2022)</p>
+  <ul>
+    <li>Developed ETL pipelines using Dataiku for multi-million-dollar projects.</li>
+    <li>Improved RPA BOTs efficiency by 80% via Python automation and Selenium reporting tools.</li>
+    <li>Collaborated with data scientists and stakeholders to optimize data pipelines.</li>
+  </ul>
+
+  <h3>CITCO – Halifax, NS</h3>
+  <p><strong>Intern Solution Analyst – VPL RPA Project</strong> (Jul 2021 – Jan 2022)</p>
+  <ul>
+    <li>Automated data fetching, API integration, and Excel processing using Python and Pandas.</li>
+    <li>Reduced computation time via multithreading/multiprocessing; added logging for debugging.</li>
+    <li>Followed Agile methodology, supporting sprint planning, testing, and releases.</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>LLMs (Mistral, Llama3, Phi-3, GLiNER, Bedrock)</span>
+    <span>Prompt Engineering</span>
+    <span>RAG</span>
+    <span>Multimodal AI (LayoutLMv3)</span>
+    <span>Neo4j</span>
+    <span>AWS SageMaker</span>
+    <span>PySpark</span>
+    <span>Pandas</span>
+    <span>Terraform</span>
+    <span>Docker</span>
+    <span>Ansible</span>
+    <span>Python</span>
+    <span>CI/CD</span>
+    <span>ETL</span>
+    <span>REST API</span>
+    <span>PaddleOCR</span>
+    <span>OCR Workflows</span>
+    <span>Selenium</span>
+    <span>Blue Prism</span>
+    <span>OpenShift</span>
+    <span>Multithreading / Multiprocessing</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a class="contact" href="mailto:mitbpatel0128@gmail.com">mitbpatel0128@gmail.com</a></p>
+  <p>LinkedIn: <a class="contact" href="https://www.linkedin.com/in/mitbpatel0128" target="_blank">linkedin.com/in/mitbpatel0128</a></p>
+  <p>GitHub: <a class="contact" href="https://github.com/mitbpatel0128" target="_blank">github.com/mitbpatel0128</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Mit Kumar Patel. All Rights Reserved.
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+
+</body>
+</html>
